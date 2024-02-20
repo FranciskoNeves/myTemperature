@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="thermometer-container">
+        <div class="line min-line"></div>
+        <div class="line max-line"></div>
+        <div [ngStyle]="calculateRotation()" class="line target-line"></div>
+    </div>
+    <p>{{targetTemperature}} ºC</p>
+</div>
+

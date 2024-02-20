@@ -1,0 +1,47 @@
+.container{
+    background-color: #eeeeee;
+    height: 10rem; 
+    width: 8rem; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+
+    .thermometer-container{
+        background-color: #ffffff; 
+        height: 4rem; 
+        width: 4rem; 
+        border-radius: 50%; 
+        border: 2px solid #000; 
+        position: relative; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+
+        .line{
+            height: 4px; 
+            width: 2rem;
+            position: absolute;
+        }
+
+        .min-line{
+            background-color: #ffffff; 
+            transform: rotate(-45deg); 
+            transform-origin: center right; 
+            left: -1rem; 
+            border-left: 1rem solid black;
+        }
+        .max-line{
+            background-color: #ffffff; 
+            transform: rotate(45deg); 
+            transform-origin: center left; 
+            right: -1rem; 
+            border-right: 1rem solid black;
+        }
+        .target-line{
+            background-color: #000; 
+            transform-origin: center right; 
+            left: 0;
+        }
+    }
+}
